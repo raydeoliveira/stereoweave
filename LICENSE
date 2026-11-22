@@ -1,0 +1,45 @@
+StereoWeave Commercial Software License Agreement (EULA)
+Version 1.0 — Effective 2026
+
+Copyright (c) 2026 Raymond de Oliveira. All rights reserved.
+
+1. GRANT OF LICENSE
+StereoWeave is distributed in two tiers within the commercial binary build:
+
+(a) Free Core Tier (No License Key Required):
+You are granted a non-exclusive, non-transferable, revocable license to install
+and execute the Free Core features (`probe`, `edid inspect`, `edid budget`,
+`edid patch --dry-run`, `edid apply --dry-run`, `weave --out-layout dubois-anaglyph`,
+and read-only MCP tools) for personal, evaluation, or commercial use.
+
+(b) Pro Perpetual Tier (Valid Polar.sh License Key Required):
+Upon purchase of a valid StereoWeave Pro license key, Raymond de Oliveira grants
+you a perpetual, non-exclusive, non-transferable license for one (1) named
+individual to activate and use all Pro features (checksum-valid EDID patch
+output, macOS DisplayOverride apply/restore, full Metal GPU stereo/lenticular/
+RGB-D DIBR weaving, hardware VideoToolbox MV-HEVC Spatial Video conversion,
+and Pro MCP tools) on up to three (3) personal Apple Silicon macOS machines.
+Pro licenses operate offline after activation with local key caching and zero
+usage telemetry.
+
+2. RESTRICTIONS
+Except where explicitly permitted by an open-source release under a separate
+MIT License file distributed by the copyright holder:
+- You may not redistribute, resell, sublicense, or publish the commercial
+  binary, source code, or Pro license keys to third parties.
+- You may not bypass or disable the license validation check in the commercial
+  distribution.
+
+3. HARDWARE SAFETY & DISCLAIMER OF WARRANTY
+StereoWeave generates EDID timing descriptors and macOS display override plists
+checked against VESA CVT-RB2 link budgets, and implements snapshot + timed
+auto-revert rollback. Because third-party displays, adapters, and cables vary,
+THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT
+HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR HARDWARE/DISPLAY MALFUNCTION
+ARISING FROM USE OF THIS SOFTWARE.
+
+4. TERMINATION & SUPPORT
+Support and bug reports: https://github.com/raydeoliveira/stereoweave/issues
+Commercial licensing inquiries: Polar.sh storefront or raydeoliveira on GitHub.

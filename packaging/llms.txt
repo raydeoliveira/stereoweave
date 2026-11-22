@@ -1,0 +1,17 @@
+# StereoWeave (`stereoweave`)
+
+> Native Apple Silicon macOS CLI, Metal GPU stereo/lenticular weaver, VESA EDID 1.4/CTA-861/DisplayID link-budget solver, bidirectional MV-HEVC Spatial Video converter, and stdio MCP server.
+
+## Capabilities
+- **Display & EDID Engine**: Live CoreGraphics/IOKit display probing; strict VESA EDID 1.4, CTA-861-I, HDMI 1.4 3D VSDB, and DisplayID 2.x parsing; VESA CVT-RB2 timing synthesis; HDMI TMDS/FRL, DisplayPort HBR2-UHBR20, and USB-C 2-lane/4-lane Alt-Mode bandwidth solver; surgical presets (`full-sbs-1080p`, `full-sbs-1080p-120`, `force-rgb444`, `hdmi-3d-framepack`); macOS DisplayOverride plist installation with mandatory snapshot, 15s confirmation watchdog, and automatic rollback.
+- **Spatial GPU & Video Engine**: Zero-dependency runtime-compiled Metal compute kernels (`full-sbs`, `half-sbs`, `tab`, `row-interlaced`, `col-interlaced`, `checkerboard`, subpixel slanted `lenticular`, Eric Dubois `dubois-anaglyph`, and `rgbd` DIBR) plus hardware VideoToolbox bidirectional Apple MV-HEVC Spatial Video transcoding.
+- **AI-Agent Native**: `--describe` JSON capability manifest, `--json` structured stdout (`schema_version: 1`), deterministic exit codes (`0..5`), non-interactive `--dry-run`, and built-in JSON-RPC 2.0 `stereoweave mcp`.
+
+## Install
+- Homebrew: `brew install raydeoliveira/tap/stereoweave`
+- Agent Skill: `SKILL.md` in repository root (`skills.sh` compatible)
+- MCP Manifest: `server.json` (`io.github.raydeoliveira/stereoweave`)
+
+## Pricing
+- Free forever: `probe`, `edid inspect`, `edid budget`, `edid patch --dry-run`, `edid restore`, `weave --out-layout dubois-anaglyph`, read-only MCP tools.
+- Pro License ($29 one-time via Polar.sh): `edid patch` output writes, `edid apply`, hardware 3D weaving (`full-sbs`, `half-sbs`, `tab`, interlaced, `lenticular`, `rgbd`), MV-HEVC video `convert` (with audio pass-through), and full MCP write/render tools.

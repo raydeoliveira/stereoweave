@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.raydeoliveira/stereoweave",
+  "title": "StereoWeave",
+  "description": "macOS EDID 3D/RGB-4:4:4 solver, Metal stereo weaver, and MV-HEVC Spatial Video converter.",
+  "version": "0.1.0",
+  "websiteUrl": "https://github.com/raydeoliveira/stereoweave",
+  "repository": {
+    "url": "https://github.com/raydeoliveira/stereoweave",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/raydeoliveira/stereoweave/releases/download/v0.1.0/stereoweave-0.1.0-macos-arm64.mcpb",
+      "version": "0.1.0",
+      "fileSha256": "c0d4e1c5abd3e559b93d4ed45ace10b8ac1a23f485b177f7997de9acfa62d968",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "STEREOWEAVE_LICENSE_KEY",
+          "description": "Optional Polar.sh Pro license key unlocking write, Metal render, and MV-HEVC tools.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
