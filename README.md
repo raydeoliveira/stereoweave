@@ -1,5 +1,7 @@
 # StereoWeave
 
+> **Product Hub:** [raymonddeoliveira.com/software](https://www.raymonddeoliveira.com/software#stereoweave) · **Buy StereoWeave Pro ($29):** [Polar Checkout](https://buy.polar.sh/polar_cl_MrcR0NZr2XlxyaOUb0Mb1LfcYkpRB95tdMtpr1Okyyf) · **4-CLI Bundle ($49, save $57):** [Bundle Checkout](https://buy.polar.sh/polar_cl_KTtCY3iQC4bzjqp93aC6LCog8UZqzZzuDgkAs3BvF74) · **Verified MCP:** [Glama](https://glama.ai/mcp/servers/raydeoliveira/stereoweave) · **Free Core:** `brew tap raydeoliveira/tap && brew install stereoweave`
+
 Native Apple Silicon macOS CLI and MCP server that audits and patches VESA EDID 1.4 / CTA-861 display overrides for 3D monitors, AR glasses, 3D projectors, and 4K OLEDs, weaves stereo/lenticular frames on Metal, and converts Apple MV-HEVC Spatial Video bidirectionally via VideoToolbox — in a single **645 KB** zero-dependency binary.
 
 ## Measured Footprint
