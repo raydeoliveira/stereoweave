@@ -104,6 +104,13 @@ Real output:
 ```
 
 ### 3. Dry-Run Patch, Metal Weave, MV-HEVC Convert & AI Agent MCP
+
+With StereoWeave installed, add the [agent instructions](SKILL.md) to your project for EDID inspection and spatial video conversion.
+
+```sh
+npx skills add raydeoliveira/stereoweave
+```
+
 ```bash
 # Preview Full-SBS 3840x1080@60Hz EDID patch with checksum verification (Free):
 stereoweave edid patch --fixture xreal-ar-glasses --preset full-sbs-1080p --dry-run --json
